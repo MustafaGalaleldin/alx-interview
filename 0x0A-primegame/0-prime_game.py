@@ -3,6 +3,7 @@
 Prime Game - Determine the winner after playing x rounds of the game.
 """
 
+
 def is_prime(num):
     """Check if a number is prime."""
     if num < 2:
@@ -11,6 +12,7 @@ def is_prime(num):
         if num % i == 0:
             return False
     return True
+
 
 def generate_prime_counts(limit):
     """Generate a list of prime counts up to the limit."""
@@ -24,6 +26,7 @@ def generate_prime_counts(limit):
 
     return primes
 
+
 def isWinner(x, nums):
     """
     Determine the winner of the Prime Game after x rounds.
@@ -33,7 +36,8 @@ def isWinner(x, nums):
         nums (list): List of n values for each round.
 
     Returns:
-        str: Name of the player with the most wins ("Maria" or "Ben"), or None if a tie.
+        str: Name of the player with the most wins
+        ("Maria" or "Ben"), or None if a tie.
     """
     if x < 1 or not nums:
         return None
